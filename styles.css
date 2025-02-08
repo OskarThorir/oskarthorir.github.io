@@ -8,16 +8,16 @@
 /* Apply a base style to the whole website */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;  /* Black background */
+    background-color: #c3c3c3;  /* Black background */
     color: #ffffff;             /* White text */
     line-height: 1.6;             /* Improve readability */
 }
 
 header {
+    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    background-color: #ffffff;
     margin: 20px
 }
 
@@ -33,7 +33,7 @@ header {
 }
 
 nav ul {
-    margin: 20px ;
+    margin: 30px ;
     list-style: none;
     display: flex;
     gap: 20px
@@ -42,7 +42,7 @@ nav ul {
 nav ul li a {
     position: relative; 
     text-decoration: none;
-    color: #8d8d8d;
+    color: #454545;
     font-weight: bold;
 }
 
@@ -71,7 +71,6 @@ nav ul li a:hover::after {
     justify-content: flex-start;
     height: 75vh;   
     align-items: center;
-    background: linear-gradient(to bottom right, #ffffff, #fffefe);
     padding-left: 50px;
 }
 .hero-content {
@@ -105,4 +104,28 @@ nav ul li a:hover::after {
 .hero-subtitle {
     margin-bottom: 0px;  /* Space below the subtitle */
     color: #000000;
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        height: 40px;       /* Reduce height on smaller screens */
+        max-width: 120px;   /* Adjust the width limit */
+        margin: 10px;       /* Less margin on smaller screens */
+    }
+
+    header {
+        flex-direction: column;  /* Stack logo and nav vertically on small screens */
+        align-items: center;     /* Center them horizontally */
+    }
+
+    nav ul {
+        margin: 10px 0;    /* Adjust spacing for nav items */
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 15px;
+        align-items: center
+    }
+    nav ul li {
+        text-align: center;     /* Center the text of each link */
+    }
 }
