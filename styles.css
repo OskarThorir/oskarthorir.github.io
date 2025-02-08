@@ -1,56 +1,108 @@
+/* Reset some basic styles for consistency */
+* {
+    margin: 0;               /* Removes default margins */
+    padding: 0;              /* Removes default padding */
+    box-sizing: border-box;  /* Ensures padding doesn’t affect overall width */
+}
+
+/* Apply a base style to the whole website */
 body {
-    background-color: #121212; /* Dark background */
-    color: white; /* White text */
-    font-family: Arial, sans-serif; /* Use a cleaner font */
-    text-align: center; /* Center align text */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;  /* Black background */
+    color: #ffffff;             /* White text */
+    line-height: 1.6;             /* Improve readability */
 }
+
 header {
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #ffffff;
+    margin: 20px
 }
 
-h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.logo {
+    height: 50px;  /* Adjust the size of your logo */
+    width: auto;   /* Maintain the aspect ratio */
+    margin: 20px;  /* Add some space around the logo */
+    transition: transform 0.3s ease-in-out;
 }
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+}
+
 nav ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0;
-}
-
-nav ul li {
-    display: inline; /* Make links appear in a row */
-    margin: 0 15px; /* Add spacing between links */
+    margin: 20px ;
+    list-style: none;
+    display: flex;
+    gap: 20px
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none; /* Remove underline */
-    font-size: 18px;
-    padding: 10px;
+    position: relative; 
+    text-decoration: none;
+    color: #8d8d8d;
+    font-weight: bold;
+}
+
+nav ul li a::after {
+    content: "";                   /* Required to display the pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;                      /* Start with no underline */
+    height: 2px;                   /* Thickness of the underline */
+    background-color: #000000;     /* Underline color */
+    transition: width 0.3s ease;   /* Smooth animation for width */
 }
 
 nav ul li a:hover {
-    color: #4CAF50; /* Change color when hovered */
-}
-#hero {
-    margin-top: 50px;
-    padding: 40px;
-    background-color: #1e1e1e; /* Slightly lighter dark color */
-    border-radius: 10px; /* Rounded corners */
-    display: inline-block;
-}
-.btn {
-    display: inline-block;
-    background-color: #007BFF;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
+    color: #000000;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+/* Animate the underline on hover */
+nav ul li a:hover::after {
+    width: 100%;                   /* Full underline on hover */
+}
+
+#hero {
+    display: flex;
+    justify-content: flex-start;
+    height: 75vh;   
+    align-items: center;
+    background: linear-gradient(to bottom right, #ffffff, #fffefe);
+    padding-left: 50px;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px; 
+}
+.hero-btn {
+    text-decoration: none;
+    color:#ffffff;
+    background-color:#424242;
+    padding: 7px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: fit-content;
+    
+}
+
+.hero-btn:hover {
+    background-color: #959595;
+    cursor: pointer;
+}
+
+.hero-title {
+    margin-bottom: 0px;  /* Space below the title */
+    color: #2d2d2d;
+}
+
+.hero-subtitle {
+    margin-bottom: 0px;  /* Space below the subtitle */
+    color: #000000;
 }
