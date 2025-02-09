@@ -14,11 +14,13 @@ body {
 }
 
 header {
-    width:100%;
+    width:auto;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    margin: 20px
+    padding: 0 40px;
+    margin: 20px auto;   /* Center the header horizontally */
+    background-color: #c3c3c3; 
 }
 
 .logo {
@@ -106,26 +108,134 @@ nav ul li a:hover::after {
     color: #000000;
 }
 
+/* CV Page Styling */
+#cv-page { 
+    color: #2d2d2d;              /* Dark text for readability */
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 60px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
+#cv-page h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+#cv-page { 
+    background-color: #c3c3c3;  /* Same color as the header to avoid contrast lines */
+    color: #2d2d2d;  
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;  /* Removed top margin to avoid gap */
+    border-radius: 8px;
+    box-shadow: none;  /* Temporarily remove shadow to see if that's causing the line */
+}
+
+/* Style for the CV download button */
+.cv-download-btn {
+    display: inline-block;
+    background-color: #2d2d2d;
+    color: #ffffff; 
+    padding: 0px 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cv-download-text{
+    text-align: center;
+}
+
+.cv-download-btn:hover {
+    background-color: #454545;
+}
+
+/* Section headers in the CV */
+.cv-overview h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    border-bottom: 2px solid #2d2d2d;
+    padding-bottom: 5px;
+}
+
+/* List styling for Education, Experience, and Technologies */
+.cv-overview ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cv-overview ul li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.cv-overview strong {
+    font-weight: bold;
+    color: #000000;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;              /* Allows images to wrap to the next line if needed */
+    justify-content: center;      /* Centers images horizontally */
+    gap: 20px;                    /* Adds space between images */
+    margin: 20px;                 /* Adds space around the gallery */
+}
+
+.gallery img {
+    max-width: 100%;              /* Prevents image from exceeding container width */
+    width: 300px;                 /* Fixed width to keep images the same size */
+    height: auto;                 /* Maintains aspect ratio */
+    border-radius: 8px;           /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  /* Optional: Adds a soft shadow */
+    object-fit: cover;            /* Ensures images fill the container without stretching */
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);       /* Slight zoom on hover */
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .logo {
-        height: 40px;       /* Reduce height on smaller screens */
-        max-width: 120px;   /* Adjust the width limit */
-        margin: 10px;       /* Less margin on smaller screens */
+    .cv-section {
+        margin: 20px;
+        padding: 15px;
     }
 
     header {
-        flex-direction: column;  /* Stack logo and nav vertically on small screens */
-        align-items: center;     /* Center them horizontally */
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
     }
 
     nav ul {
-        margin: 10px 0;    /* Adjust spacing for nav items */
-        flex-direction: column; /* Stack nav items vertically */
-        gap: 15px;
-        align-items: center
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
-    nav ul li {
-        text-align: center;     /* Center the text of each link */
+
+    #cv-page {
+        padding: 20px 15px;
     }
+
+    #cv-page h1 {
+        font-size: 2rem;
+    }
+
+    .cv-overview h2 {
+        font-size: 1.5rem;
+    }
+
+    .cv-overview ul li {
+        font-size: 1rem;
+    }
+
 }
