@@ -196,11 +196,17 @@ nav ul li a:hover::after {
     border-radius: 8px;           /* Optional: Adds rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  /* Optional: Adds a soft shadow */
     object-fit: cover;            /* Ensures images fill the container without stretching */
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
 }
 
 .gallery img:hover {
     transform: scale(1.05);       /* Slight zoom on hover */
+}
+
+.photography-section h1 {
+    color: #2d2d2d;
+    display: flex;
+    justify-content: center;
 }
 
 /* Responsive Design */
