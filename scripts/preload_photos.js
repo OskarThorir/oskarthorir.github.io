@@ -33,7 +33,7 @@ function openLightbox(src) {
     lightbox.style.left = 0;
     lightbox.style.width = '100%';
     lightbox.style.height = '100%';
-    lightbox.style.background = 'rgba(58, 58, 58, 0.9)';  // Light grey background
+    lightbox.style.background = 'rgba(0, 0, 0, 0.9)';  // Light grey background
     lightbox.style.display = 'flex';
     lightbox.style.alignItems = 'center';
     lightbox.style.justifyContent = 'center';
