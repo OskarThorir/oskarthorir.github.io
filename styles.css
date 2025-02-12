@@ -207,7 +207,7 @@ img {
     transform: rotate(0deg); /* Resets any rotation */
 }
 
-.photography-section h1 {
+.gallery h1 {
     color: #2d2d2d;
     display: flex;
     justify-content: center;
@@ -226,6 +226,8 @@ img {
 .gallery img:hover {
     transform: scale(1.05);
 }
+
+
 
 /* Loading screen styling */
 #loading-screen {
