@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact | Óskar Þórir</title>
     <link rel="stylesheet" href="../styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-</head> 
+</head>
 <body>
-
     <header>
         <a href="../index.html">
             <img src="../images/logo.png" alt="Logo" class="logo">
@@ -23,14 +21,22 @@
         </nav>
     </header>
 
-    <!-- CV Section -->
-    <section class="cv-section">
-        <div class="cv-content">
-            <h1>Curriculum Vitae</h1>
-            <p>Welcome to my professional profile. Here you'll find my education, work experience, skills, and more.</p>
-            <!-- Add more CV details here -->
-        </div>
-    </section>
+    <section class="contact-section">
+        <h1>Contact me here!</h1>
+        <p>I'd love to hear from you! Fill out the form below to send me a message.</p>
 
+        <form action="https://formspree.io/f/xnnjbvyn" method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
 </body>
 </html>
