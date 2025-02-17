@@ -13,18 +13,9 @@ body {
     line-height: 1.6;             /* Improve readability */
 }
 
-/* Fade-in effect */
-.fade-in {
-    opacity: 0; /* The element starts completely invisible */
-    transform: translateY(20px); /* Starts slightly lower */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
 
-/* Once the element is in view, apply this class */
-.visible {
-    opacity: 1; /* Make the element fully visible */
-    transform: translateY(0); /* Reset position */
-}
+
+
 
 header {
     width:auto;
