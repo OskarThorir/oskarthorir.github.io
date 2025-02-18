@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* Reset some basic styles for consistency */
 * {
     margin: 0;               /* Removes default margins */
@@ -11,6 +13,10 @@ body {
     background-color: #c3c3c3;  /* Black background */
     color: #ffffff;             /* White text */
     line-height: 1.6;             /* Improve readability */
+}
+
+input, textarea, button {
+    font-family: inherit;  /* Ensures they use Montserrat */
 }
 
 /* Fade-in effect */
@@ -341,8 +347,14 @@ img {
     color: #454545; 
 }
 
+/* Ensure the nav bar in contact.html follows the same styling */
+.contact-section nav ul li a {
+    font-size: inherit !important;
+    font-family: inherit !important;
+}
 .contact-section p {
     color: #454545; 
+    font-size: 1rem;
 }
 
 .contact-form label {
@@ -391,14 +403,14 @@ img {
 
     header {
         flex-direction: column;
-        gap: 10px;
-        padding: 15px;
+        gap: 0px;
+        padding: 0px;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
     }
 
     #cv-page {
