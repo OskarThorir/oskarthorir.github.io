@@ -1,0 +1,63 @@
+@import url("styles.css"); /* Inherits base styles */
+
+
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #c3c3c3;  /* Same background as header */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    color: #454545; 
+}
+
+/* Ensure the nav bar in contact.html follows the same styling */
+.contact-section nav ul li a {
+    font-size: inherit !important;
+    font-family: inherit !important;
+}
+.contact-section p {
+    color: #454545; 
+    font-size: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #454545;         /* Match the color of nav links */
+    font-weight: bold;      /* Match font weight */
+    font-family: 'Montserrat', sans-serif;  /* Ensure consistent font */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;  /* Consistent font */
+    color: #454545;        /* Same text color as nav links */
+    background-color: #d2d2d2;  /* Light background for contrast */
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #454545;   /* Same color as nav link text */
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #000000;   /* Match hover effect with nav links */
+}

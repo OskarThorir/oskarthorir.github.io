@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset some basic styles for consistency */
+* {
+    margin: 0;               /* Removes default margins */
+    padding: 0;              /* Removes default padding */
+    box-sizing: border-box;  /* Ensures padding doesn’t affect overall width */
+}
+
+/* Apply a base style to the whole website */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c3c3c3;  /* Black background */
+    color: #ffffff;             /* White text */
+    line-height: 1.6;             /* Improve readability */
+}
+
+input, textarea, button {
+    font-family: inherit;  /* Ensures they use Montserrat */
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0; /* The element starts completely invisible */
+    transform: translateY(20px); /* Starts slightly lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Once the element is in view, apply this class */
+.visible {
+    opacity: 1; /* Make the element fully visible */
+    transform: translateY(0); /* Reset position */
+}
+
+header {
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 40px;
+    margin: 20px auto;   /* Center the header horizontally */
+    background-color: #c3c3c3; 
+}
+
+.logo {
+    height: 50px;  /* Adjust the size of your logo */
+    width: auto;   /* Maintain the aspect ratio */
+    margin: 20px;  /* Add some space around the logo */
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+}
+
+nav ul {
+    margin: 30px ;
+    list-style: none;
+    display: flex;
+    gap: 20px
+}
+
+nav ul li a {
+    position: relative; 
+    text-decoration: none;
+    color: #454545;
+    font-weight: 600;
+}
+
+nav ul li a::after {
+    content: "";                   /* Required to display the pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;                      /* Start with no underline */
+    height: 2px;                   /* Thickness of the underline */
+    background-color: #000000;     /* Underline color */
+    transition: width 0.3s ease;   /* Smooth animation for width */
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+/* Animate the underline on hover */
+nav ul li a:hover::after {
+    width: 100%;                   /* Full underline on hover */
+}
+
+#hero {
+    display: flex;
+    justify-content: flex-start;
+    height: 75vh;   
+    align-items: center;
+    padding-left: 50px;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px; 
+}
+.hero-btn {
+    text-decoration: none;
+    color:#ffffff;
+    background-color:#959595;
+    padding: 7px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: fit-content;
+    
+}
+
+.hero-btn:hover {
+    background-color: #424242;;
+    cursor: pointer;
+}
+
+.hero-title {
+    margin-bottom: 0px;  /* Space below the title */
+    color: #2d2d2d;
+}
+
+.hero-subtitle {
+    margin-bottom: 0px;  /* Space below the subtitle */
+    color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cv-section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #cv-page {
+        padding: 20px 15px;
+    }
+
+    #cv-page h1 {
+        font-size: 2rem;
+    }
+
+    .cv-overview h2 {
+        font-size: 1.5rem;
+    }
+
+    .cv-overview ul li {
+        font-size: 1rem;
+    }
+
+}

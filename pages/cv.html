@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cv.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head> 
 <body>
@@ -28,32 +29,105 @@
             <h1>My CV</h1>
             <p class = "cv-download-text">You can view my full CV in PDF form 
                 <a href="documents/CV-EN.pdf" class="cv-download-btn">here!</a>
-            </p>
-    
-            <div class="cv-overview">
                 <h2>Education</h2>
-                <ul>
-                    <li><strong>M.Sc. in Computer Science & Engineering</strong> - Technical University of Denmark, 2024 -</li>
-                    <li><strong>B.Sc. in Software Engineering</strong> - University of Iceland, 2018 - 2022</li>
-                    <li><strong>High School Diploma (Physics Major)</strong> - Menntaskólinn við Reykjavík (Reykjavik Junior College), 2014 - 2018</li>
+                <ul class="cv-list">
+                    <li>
+                        <div class="cv-item">
+                            <div class="cv-left">
+                                <div class="cv-year">2024 - Present</div>
+                            </div>
+                            <div class="cv-right">
+                                <strong>M.Sc. in Computer Science & Engineering</strong>
+                                <p>Technical University of Denmark</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cv-item">
+                            <div class="cv-left">
+                                <div class="cv-year">2018 - 2022</div>
+                            </div>
+                            <div class="cv-right">
+                                <strong>B.Sc. in Software Engineering</strong>
+                                <p>University of Iceland</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cv-item">
+                            <div class="cv-left">
+                                <div class="cv-year">2014 - 2018</div>
+                            </div>
+                            <div class="cv-right">
+                                <strong>High School Diploma (Physics Major)</strong>
+                                <p>Menntaskólinn við Reykjavík (Reykjavik Junior College)</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
-    
+
                 <h2>Experience</h2>
-                <ul>
-                    <li><strong>Project Manager</strong> - Kemi, 2022 - 2024</li>
-                    <li><strong>UI testing and digital marketing</strong> - AaCave, May 2021 - August 2021</li>
-                    <li><strong>Receptionist</strong> - Reykjavik4you, May 2018 - May 2020</li>
-                    <li><strong>Oversser of Drivetrain's fasteners</strong> - Team Spark, August 2018 - July 2019</li>
+                <ul class="cv-list">
+                    <li>
+                        <div class="cv-item">
+                            <div class="cv-left">
+                                <div class="cv-year">2022 - 2024</div>
+                            </div>
+                            <div class="cv-right">
+                                <strong>Project Manager</strong>
+                                <p> <a href="https://kemi.is/" target="_blank">Kemi</a></a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cv-item">
+                            <div class="cv-left">
+                                <div class="cv-year">Summer 2021</div>
+                            </div>
+                            <div class="cv-right">
+                                <strong>UI Testing and Digital Marketing</strong>
+                                <p> <a href="https://aacave.com/" target="_blank"> AaCave</a></a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cv-item">
+                            <div class="cv-left">
+                                <div class="cv-year">2018 - 2020</div>
+                            </div>
+                            <div class="cv-right">
+                                <strong>Receptionist</strong>
+                                <p> <a href="https://reykjavik4you.com/" target="_blank">  Reykjavik4you</a></a></p>
+                            </div>
+                        </div>
+                    <li>
+                        <div class="cv-item">
+                            <div class="cv-left">
+                                <div class="cv-year">2018 - 2019</div>
+                            </div>
+                            <div class="cv-right">
+                                <strong>Oversser of Drivetrain's fasteners</strong>
+                                <p> <a href="https://teamspark.is/en" target="_blank">Team Spark</a></a></p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
-    
+
                 <h2>Technologies</h2>
-                <ul>
-                    <li>Java, Python, R</li>
-                    <li>SQL, SQLite, REST APIs</li>
-                    <li>HTML, CSS, Javascript</li>
-                    <li>Docker, Camunda, BPMN</li>
-                    <li>Git, Github, Gitlab</li>
-                </ul>
+                <div class="technology-grid">
+                    <img src="../images/technologies/java-logo.png" alt="Java Logo">
+                    <img src="../images/technologies/python-logo.png" alt="Python Logo">
+                    <img src="../images/technologies/r-logo.png" alt="R Logo">
+                    <img src="../images/technologies/sql-logo.png" alt="SQL Logo">
+                    <img src="../images/technologies/git-logo.png" alt="Git Logo">
+                    <img src="../images/technologies/rest-logo.png" alt="REST API Logo">
+                    <img src="../images/technologies/html-logo.png" alt="HTML Logo">
+                    <img src="../images/technologies/css-logo.png" alt="CSS Logo">
+                    <img src="../images/technologies/js-logo.png" alt="JavaScript Logo">
+                    <img src="../images/technologies/docker-logo.png" alt="Docker Logo">
+                    <img src="../images/technologies/ij-logo.png" alt="IntelliJ Logo">
+                    <img src="../images/technologies/vs-logo.png" alt="VS Code Logo">
+                </div>
             </div>
         </div>
     </section>
